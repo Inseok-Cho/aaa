@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inseok</title>
+    <link rel="icon" type="image/png" href="img/images1.png" />
+    <link rel="stylesheet" href="inseok.css">
+    <script src="https://kit.fontawesome.com/91b8a5d751.js" crossorigin="anonymous"></script>
+    <script src='inseok.js' defer></script>
+</head>
+
+<body>
+    <!--Navbar-->
+<nav id="navbar">
+    <div class="navbar__logo">
+    <i class="fab fa-angellist"></i>
+    <a href="#">Inseok</a>
+
+    </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item active" data-link="#home">Home</li>
+            <li class="navbar__menu__item" data-link="#about">About</li>
+            <li class="navbar__menu__item" data-link="#skills">Skills</li>
+            <li class="navbar__menu__item" data-link="#work">My Work</li>
+            <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+    <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+</nav>
+
+<!--Home-->
+<section id="home">
+    <div class="home__container">
+    <img src="img/inseok.jpg" class="home__avatar" />
+    <h1 class="home__title">Hello! <br>I'am inseok Jo</h1>
+    <h3 class="home__description"> Sample </h3>
+    <button class="home__button" data-link="#contact">Push This</button>
+</div>
+</section>
+
+<!--about-->
+<section id="about" class="section section__container">
+<h1>about me</h1>
+<p>
+    Hello! I'm student.
+</p>
+<div class="about__majors">
+    <div class="major">
+        <div class="major__icon">
+            <i class="fab fa-html5"></i>
+        </div>
+        <h2 class="major__title">
+         Front-end
+        </h2>
+        <p class="major__description">
+            HTML,CSS,Python
+        </p>
+    </div>
+
+    <div class="major">
+        <div class="major__icon">
+            <i class="fas fa-terminal"></i>
+        </div>
+        <h2 class="major__title">
+        Back-end
+        </h2>
+        <p class="major__description">
+        Java
+        </p>
+    </div>
+
+    <div class="major">
+        <div class="major__icon">
+            <i class="fas fa-language"></i>
+        </div>
+        <h2 class="major__title">
+        Languages
+        </h2>
+        <p class="major__description">
+        Korean English
+        </p>
+    </div>
+</div>
+
+<div class="about__study">
+    <div class="study">
+        <a class="sub__box__1"></a>
+        <img src="img/HYU_logo.png" alt="" class="study__logo"></img>
+        <a class="sub__box__2"></a>
+        <div class="study__description">
+            <p class="study__name"></p>
+        </div>
+        <p class="study__period">2021 Mar - Until now</p>
+    </div>
+</div>
+</section>
+
+<!--Skills-->
+<section id="skills" class="section">
+    <class class="section__container">
+    <h1>Skills</h1>
+    <h2>Skills & Attributes</h2>
+    <p>
+        Trying to experience many field
+    </p>
+    <div class="skilset">
+        <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+                <div class="skill__description">
+                    <span>HTML</span>
+                    <span>90%</span>
+                </div>
+                <div class="skill__bar">
+                    <div class="skill__value" style="width: 90%">
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill__description">
+                    <span>CSS</span>
+                    <span>80%</span>
+                </div>
+                <div class="skill__bar">
+                    <div class="skill__value" style="width: 80%">
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill__description">
+                    <span>JavaScript</span>
+                    <span>0%</span>
+                </div>
+                <div class="skill__bar">
+                    <div class="skill__value" style="width: 0%">
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill__description">
+                    <span>C++</span>
+                    <span>60%</span>
+                </div>
+                <div class="skill__bar">
+                    <div class="skill__value" style="width: 60%">
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill__description">
+                    <span>React</span>
+                    <span>10%</span>
+                </div>
+                <div class="skill__bar">
+                    <div class="skill__value" style="width: 10%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skillset__right">
+            <div class="tools">
+                <h3 class="skillset__title">Tools</h3>
+                <ul class="tools__list">
+                    <li><span>Visual Studio Code</span></li>
+                </ul>
+            </div>
+            <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+                <ul class="etc__list">
+                    <li><span>Git</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </class>
+</section>
+
+<!--Work-->
+<section id="work" class="section">
+    <div class="section__container">
+        <h1>My Work</h1>
+    <h3>Projects</h3>
+    <div class="work__categories">
+        <button class="category__btn" data-filter="*">All<span class="category__count">8</span></button>
+        <button class="category__btn selected" data-filter="front-end">Front-end<span class="category__count">8</span></button>
+        <button class="category__btn" data-filter="back-end">Back-end<span class="category__count">8</span></button>
+        <button class="category__btn" data-filter="etc">Etc<span class="category__count">8</span></button>
+    </div>
+    <div class="work__projects">
+        <a href="https://github.com/Inseok-Cho/Web-study" class="project" target="blank" data-type="front-end">
+            <img src="img/aaa.png" class="project__img" alt="">
+            <h3>Myproject</h3>
+            <span>Made by html, css</span>
+        </a>
+        <div class="work__projects">
+            <a href="https://github.com/Inseok-Cho/Web-study" class="project" target="blank" data-type="back-end">
+                <img src="img/aaa.png" class="project__img" alt="">
+                <h3>Myproject</h3>
+                <span>Made by html, css</span>
+            </a>
+    </div>   
+    </div> 
+</section>
+
+<!--Contact-->
+<section id="contact" class="section">
+    <h1 class="contact__title">Let's talk!</h1>
+    <h2 class="contact__email">goodinseok@naver.com</h2>
+    <div class="contact__link">
+        <a href="https://github.com/Inseok-Cho" target="blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+    <p class="contact__rights">
+        2021 Inseok - All rights reserved
+    </p>
+</section>
+
+<button class="arrow-up">
+    <i class="far fa-hand-point-up"></i>
+</button>
+
+</nav>
+    
+</body>
+</html>
